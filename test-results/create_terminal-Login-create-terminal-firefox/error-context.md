@@ -3,7 +3,7 @@
 ```yaml
 - navigation:
   - list:
-    - listitem: " A297 : ying_BS_onboarding "
+    - listitem: " A810 : ying_BS_onboarding06 "
 - textbox "ค้นหา.."
 - text:   ผลการค้นหา
 - table
@@ -14,11 +14,11 @@
       - button " สร้างแบรนด์ใหม่"
 - list:
   - listitem:
-    - textbox "ค้นหาแบรนด์..": "297"
+    - textbox "ค้นหาแบรนด์..": "810"
     - text: 
 - list:
   - listitem:  ผู้ใช้งานสูงสุด
-  - listitem: " A297 : ying_BS_onboarding  กำลังใช้งาน"
+  - listitem: " A810 : ying_BS_onboarding06  กำลังใช้งาน"
 - list:
   - listitem:
     - button "ปิด"
@@ -160,6 +160,9 @@
       - link " รหัสโปรโมชันท้ายใบเสร็จ":
         - /url: /brand-promotion-code-receipt
     - listitem:
+      - link " แพ็กเกจบุฟเฟต์":
+        - /url: /buffet
+    - listitem:
       - link "จัดการสาขา":
         - /url: /
     - listitem:
@@ -249,27 +252,40 @@
     - listitem:
       - link "จัดการ POS":
         - /url: /pos/list
-    - listitem: / POS ทั้งหมด
-- link "สร้าง":
-  - /url: /pos-manage
-- heading "POS Search" [level=6]
-- text: Keyword
-- textbox "ค้นหา POS"
-- text: Serial Channel
+    - listitem:
+      - text: /
+      - link "POS ทั้งหมด":
+        - /url: /pos/list
+    - listitem:
+      - text: /
+      - link "ข้อมูล POS":
+        - /url: /pos/list
+    - listitem: / POS
+- button "บันทึก"
+- heading "รายละเอียด" [level=5]
+- text: "Activate Code : 867577 สาขา"
 - combobox:
-  - option "ทั้งหมด" [selected]
-  - option "POS"
-  - option "POS Mobile"
-  - option "POS BDG"
-  - option "Delivery"
-- text: เลือกสาขา
-- combobox
-- text: รหัสร้านค้า / ชื่อร้านค้า Terminal Type
-- combobox:
-  - option "ทั้งหมด" [selected]
-  - option "เครื่องหลัก (Host)"
-  - option "เครื่องรอง (Client)"
-- button "ค้นหา"
-- table: There are no records to display
+  - option "เลือกสาขา" [selected]
+  - option "ying"
+- text: ชื่อเครื่อง POS
+- 'textbox "Activate Code : ชื่อเครื่อง POS"'
+- text: Serial
+- group: POS POS Mobile POS BDG
+- textbox
+- text: Terminal Type
+- group: เครื่องหลัก (Host) เครื่องรอง (Client)
+- text: RD#
+- textbox "RD#"
+- text: Model
+- textbox "Model"
+- text: Status
+- combobox "Status":
+  - option "Active" [selected]
+  - option "Inactive"
+- text: Release Type
+- combobox "Release Type":
+  - option "Mass" [selected]
+  - option "Pilot"
+- text: Additional Hardware Barcode Scanner SLIP Printer Cash Drawer EDC Card Reader
 - img
 ```

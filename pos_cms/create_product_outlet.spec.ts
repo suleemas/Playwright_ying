@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { login, open_brand_and_outlet } from "../playwright-report/config";// นำเข้า config ที่มีฟังก์ชัน login
+import { login, open_brand_and_outlet } from"../config";// นำเข้า config ที่มีฟังก์ชัน login
 const URL = 'https://staging-bluestat-cms.devfullteam.tech/login';
 const EMAIL = 'suleemas.fua+55@fullteam.tech';
 const PASSWORD = 'Ying964232';
