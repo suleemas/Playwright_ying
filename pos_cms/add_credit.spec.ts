@@ -6,9 +6,9 @@ const PASSWORD = "Ying964232";
 const BRAND_ID = "607";
 const OUTLET_ID = "1607";
 const Add_Credit = "1000";
-const Withdraw_Credit = "100";
+const Withdraw_Credit = "100";//test
 
-test.describe("Login", () => {
+test.describe("Credit", () => {
   test("add credit", async ({ page }) => {
     await login(page, URL, EMAIL, PASSWORD);
     await open_brand_and_outlet(page, BRAND_ID, OUTLET_ID);
@@ -25,7 +25,7 @@ test.describe("Login", () => {
   });
 });
 
-test.describe("Login", () => {
+test.describe("Credit", () => {
   test("withdraw credit", async ({ page }) => {
     await login(page, URL, EMAIL, PASSWORD);
     await open_brand_and_outlet(page, BRAND_ID, OUTLET_ID);
