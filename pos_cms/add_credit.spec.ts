@@ -6,7 +6,7 @@ const PASSWORD = "Ying964232";
 const BRAND_ID = "607";
 const OUTLET_ID = "1607";
 const Add_Credit = "1000";
-const Withdraw_Credit = "100";//test
+const Withdraw_Credit = "100";
 
 test.describe("Credit", () => {
   test("add credit", async ({ page }) => {
