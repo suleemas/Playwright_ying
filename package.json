@@ -12,9 +12,21 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@playwright/test": "^1.53.1",
     "@types/js-yaml": "^4.0.9",
     "js-yaml": "^4.1.0",
     "playwright": "^1.53.1"
-  }
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suleemas/Playwright_ying.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/suleemas/Playwright_ying/issues"
+  },
+  "homepage": "https://github.com/suleemas/Playwright_ying#readme"
 }
