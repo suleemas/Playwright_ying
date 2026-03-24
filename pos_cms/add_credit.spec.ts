@@ -9,7 +9,7 @@ const Add_Credit = "1000";
 const Withdraw_Credit = "100";//test
 
 test.describe("Credit", () => {
-  test("add credit", async ({ page }) => {
+  test("add_credit", async ({ page }) => {
     await login(page, URL, EMAIL, PASSWORD);
     await open_brand_and_outlet(page, BRAND_ID, OUTLET_ID);
     await page.getByRole("link", { name: " สาขาทั้งหมด" }).click();
@@ -22,11 +22,14 @@ test.describe("Credit", () => {
     await page.getByRole("textbox").fill("add");
     await page.getByRole("button", { name: "บันทึก" }).click();
     console.log('เติมสำเร็จ ' + Add_Credit + ' เครดิต');
+    await page.waitForTimeout(3000);
+    await page.close();
+
   });
 });
 
 test.describe("Credit", () => {
-  test("withdraw credit", async ({ page }) => {
+  test("withdraw_credit", async ({ page }) => {
     await login(page, URL, EMAIL, PASSWORD);
     await open_brand_and_outlet(page, BRAND_ID, OUTLET_ID);
     await page.getByRole("link", { name: " สาขาทั้งหมด" }).click();
@@ -40,5 +43,7 @@ test.describe("Credit", () => {
     await page.getByRole("textbox").fill("withdraw");
     await page.getByRole("button", { name: "บันทึก" }).click();
     console.log('ถอนสำเร็จ ' + Withdraw_Credit + ' เครดิต');
+    await page.waitForTimeout(3000);
+    await page.close();
   });
 });
